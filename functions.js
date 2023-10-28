@@ -1,0 +1,60 @@
+
+/*
+JavaScript Function:
+    -A JavaScript function is a block of code designed to perform a particular task.
+    -A JavaScript function is executed when "something" invokes it (calls it).
+
+There are two types of JavaScript functions
+    i)  Pre-defined functions
+    ii) User-defined functions
+*/
+
+//Seral ways to create functions:
+
+//1. Simple functions:
+function add(){
+    let a1=10
+    let a2=20
+    console.log(a1+a2);
+}
+add()
+
+
+//2. Functions Expressions:
+let  sub = function(){
+    let b1=10
+    let b2=20
+    console.log(b1-b2);
+}
+sub()
+
+
+//3.Arrow Functions:
+//Functions with parameters
+let mul = (p1,p2) =>{
+    console.log(p1*p2);
+}
+mul(20,20)
+
+//Return function
+let fullName = (fName,lName) =>{
+    return fName+lName;
+}
+let result = fullName('Shaikh' , ' Furquan')
+console.log(result);
+
+
+//4. Immediate Invoked Functions:- IIFEs are functions that are executed immediately after being defined.
+
+(function(x,y){
+    console.log(x);
+    console.log(y);
+})(100,200)
+//100 200
+
+
+(function msg(){
+    setTimeout(() =>{
+        console.log('IEFs');
+    },3000)
+})()
