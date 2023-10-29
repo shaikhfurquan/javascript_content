@@ -15,7 +15,7 @@ console.log(result);
 
 
 async function test(){
-    return (await fetch("prog_languages.json")).json()
+    return (await fetch("prog_lang.json")).json()
 }
 test().then((res) =>{
     console.log(res);
