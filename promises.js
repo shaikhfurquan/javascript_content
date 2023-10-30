@@ -68,3 +68,6 @@ p.then((c_data) =>{
 }).finally(()=>{
     console.log('Congratulations');
 })
+//Purchase Bike
+// Suzuki bike
+// Congratulations
