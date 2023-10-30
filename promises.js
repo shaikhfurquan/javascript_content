@@ -48,7 +48,7 @@ data.then((item) =>{
 
 
 //
-let purchase = new Promise((resolve ,reject)=> {
+let p = new Promise((resolve ,reject)=> {
     let purchase =false
     if(purchase){
         resolve('Purchase Car')
