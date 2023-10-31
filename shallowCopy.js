@@ -11,13 +11,13 @@ let obj = {
     }
 }
 let user = { ...obj }
-user.address.city = 'High-Tech'     ////change original object as well.
+user.address.city = 'High-Tech'     //change original object as well.So we use deep copy
 console.log('obj is :', obj);
 console.log('user is :', user);
 
 
 
-const originalArray = [1, 2, [3, 4]]   //change original array as well.
+const originalArray = [1, 2, [3, 4]]   //change original array as well.So we use deep copy
 const shallowCopy = [...originalArray]
 
 shallowCopy[2][0] = 99
