@@ -1,4 +1,23 @@
-const originalArray = [1,2,[3,4]]
+/*
+Shallow Copy:-
+    A shallow copy duplicates the top-level structure of an array or object, creating a new object/array, but it does not create a new copies of the new object/array.
+*/
+
+let obj = {
+    name: 'khan',
+    address: {
+        city: 'Hyderebad',
+        state: 'TS'
+    }
+}
+let user = { ...obj }
+user.address.city = 'High-Tech'     ////change original object as well.
+console.log('obj is :', obj);
+console.log('user is :', user);
+
+
+
+const originalArray = [1, 2, [3, 4]]   //change original array as well.
 const shallowCopy = [...originalArray]
 
 shallowCopy[2][0] = 99
