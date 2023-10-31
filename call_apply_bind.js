@@ -38,7 +38,7 @@ console.log(person1.fullName.apply(person2 , ['Hyderabad' , 'India']));
 const result = person1.fullName.bind(person2 , 'Pune' , 'India');
 console.log(result);
 //ƒ (hometown , country) {
-    //     return this.fName + ' ' + this.lName + ' ' + hometown + ' ' + country
-    // }
+//     return this.fName + ' ' + this.lName + ' ' + hometown + ' ' + country
+// }
 console.log(result());
 // Raj Kumar Pune India
