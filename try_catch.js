@@ -42,7 +42,7 @@ try {
         console.log("ok");
 }
 catch (err) {
-    console.log("Error found" + err.message);
+    console.log("Error Occures" + err.message);
 }
 finally {
     console.log(`Value of a is ${a}` );
