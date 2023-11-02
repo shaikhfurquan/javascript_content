@@ -1,4 +1,6 @@
 
-let array1 = [1,2,3]
-let array2 = [...array1 ,4,5,6]
+//Spread Operator:-The JavaScript spread operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.
+
+let array1 = [1,2,3];
+let array2 = [...array1 ,4,5,6];
 console.log(array2);

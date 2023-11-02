@@ -58,3 +58,13 @@ console.log(result);
         console.log('IEFs');
     },3000)
 })()
+
+
+//Function with for loop
+function mulTable(num){
+    for(i=1;i<=10;i++){
+        console.log(`${num}x ${i} = ${num*i}`);
+    }
+}
+
+mulTable(20)

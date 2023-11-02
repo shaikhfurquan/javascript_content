@@ -8,7 +8,7 @@ Continue:- Continue statement only stop the current iteration of the loop.
 //if i=5 the code will exit immediately.
 for (let i=1; i<=10; i++){
     if(i==5){
-    break
+    break;
     }
     console.log(i);
 }
@@ -17,7 +17,7 @@ for (let i=1; i<=10; i++){
 
 for (let j=1; j<=10; j++){
     if(j==5){
-    continue
+    continue;
     }
     console.log(j);
 }
