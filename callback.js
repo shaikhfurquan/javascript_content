@@ -1,11 +1,11 @@
 //CallBack:- passing the function as an argument.
 
 function sayHi(){
-    console.log('Hi....');
+    console.log('Hi...');
 }
 
 function sayHello(){
-    console.log('Hello....');
+    console.log('Hello...');
 }
 
 let add = function(num1,num2,callb){

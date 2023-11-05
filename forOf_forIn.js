@@ -9,8 +9,8 @@ For-In Loop:- The for-in loop is used to iterate the keys of an object.
 
 
 let array = [10,20,30]
-for(x of array) {
-    console.log(x);
+for(val of array) {
+    console.log(val);
 }
 //10,20,30
 
@@ -20,7 +20,7 @@ let person = {
     gender : 'Male'
 }
 
-for (y in person){
-    console.log(y);         //name, age , gender
-    console.log(person[y]); //John, 44, Male
+for (data in person){
+    console.log(data);         //name, age , gender
+    console.log(person[data]); //John, 44, Male
 }
