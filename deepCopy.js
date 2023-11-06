@@ -13,9 +13,9 @@ let obj = {
 
 let user = JSON.parse(JSON.stringify(obj));
 user.address.city = 'High-Tech'
-console.log('obj is : ' , user);
+console.log('obj is :' , user);
 // address: {city: 'Hyderebad', state: 'TS'}
-console.log('user is : ' , obj);
+console.log('user is :' , obj);
 // address: {city: 'High-Tech', state: 'TS'}
 
 

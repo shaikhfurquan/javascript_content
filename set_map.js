@@ -10,7 +10,7 @@
 
 
 let mdata = new Map ([
-    ['name' , 'elon'],
+    ['name' , 'Elon'],
     [10 , 'this is a number key'],
     [true , 'this is bool key']
 ])
