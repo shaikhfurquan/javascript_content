@@ -5,8 +5,8 @@ let msg = () =>{
     console.log('first order function');
 }
 
-let highorder = (returnF) =>{
-    returnF()
+let highorder = (returnFunc) =>{
+    returnFunc()
 }
 
 highorder(msg)

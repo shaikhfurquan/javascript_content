@@ -12,6 +12,13 @@ There are two types of JavaScript functions
 //Seral ways to create functions:
 
 //1. Simple functions:
+
+function sayHi(){
+    console.log('Hi...');
+}
+sayHi()
+
+
 function add(){
     let a1=10
     let a2=20
