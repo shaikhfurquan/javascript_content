@@ -7,5 +7,5 @@ The setTimeout() method is used to call a function or evaluates an expression af
 */
 
 setTimeout(function(){
-    console.log('Hllo, after 4 seconds');
-},4000)
+    console.log('Hllo, after 3 seconds');
+},3000)

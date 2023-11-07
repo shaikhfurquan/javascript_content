@@ -5,4 +5,4 @@ let add = (...x) =>{
     }
     console.log(sum);
 }
-add(45,45,45,45)
+add(4,4,6,6)
