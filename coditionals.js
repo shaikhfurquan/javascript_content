@@ -10,7 +10,7 @@ if (condition) {
 */
 let hour;
 if (hour < 18) {
-    console.log("Good day");
+  console.log("Good day");
 }
 
 
@@ -23,14 +23,22 @@ if (condition) {
   //  block of code to be executed if the condition is false
 }*/
 
-let age=20;
-if(age>=18){
-    console.log('You can drive');
-}else{
-    console.log('Wait for 18');
+let age = 20;
+if (age >= 18) {
+  console.log('You can drive');
+} else {
+  console.log('Wait for 18');
 }
 
-
+let num = +prompt('Enter a number');
+if (num % 2 == 0) {
+  console.log('Insdide if/true');
+  console.log(`The Number ${num} is Even `);
+} else {
+  console.log('Inside else/false');
+  console.log(`The number is ${num} Odd`);
+}
+console.log('Exit if-else');
 
 /*
 The else if Statement
@@ -47,10 +55,10 @@ if (condition1) {
 */
 
 let num = 10
-if(num>0){
-    console.log('+ve number');
-}else if(num<0){
-    console.log('-ve number');
-}else{
-    console.log('Equal number');
+if (num > 0) {
+  console.log('+ve number');
+} else if (num < 0) {
+  console.log('-ve number');
+} else {
+  console.log('Equal number');
 }

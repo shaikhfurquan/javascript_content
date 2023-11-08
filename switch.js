@@ -37,3 +37,36 @@ switch (vowel) {
         console.log(vowel + ', Its not volwel ');
         break;
 }
+
+
+let day = +prompt('Enter the day between 1-7')
+        let msg = '';
+
+        switch(day){
+            case 1:
+                msg = 'Monday';
+                break;
+            case 2:
+                msg = 'Tuesday';
+                break;
+            case 3:
+                msg = 'Wednesday'
+                break;
+            case 4:
+                msg = 'Thursday'
+                break;
+            case 5:
+                msg = 'Friday';
+                break;
+            case 6:
+                msg = 'Saturdsay';
+                break;
+            case 7:
+                mg = 'Sunday';
+                break;
+            default:
+                msg = 'Wrong Input';
+                break;
+        }
+
+        console.log(msg);
