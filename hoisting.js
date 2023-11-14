@@ -1,9 +1,9 @@
 
 /*
 Hoisting:-
-In JavaScript, Hoisting is a kind of default behavior in which all the declarations either variable declaration or function declaration are moved at the top of the scope just before executing the program's code.
+    In JavaScript, Hoisting is a kind of default behavior in which all the declarations either variable declaration or function declaration are moved at the top of the scope just before executing the program's code.
 
-In simple words, we can say that we can use the variables and functions in JavaScript before declaring them because as we discussed above JavaScript compiler moves the declarations of all the variables and functions at the top of their scope so that there will not be an error of any kind.
+    Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
 */
 
 

@@ -1,4 +1,8 @@
-//CallBack:- passing the function as an argument.
+/*
+CallBack:- 
+    passing the function as an argument.
+    A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
+*/
 
 function sayHi(){
     console.log('Hi...');

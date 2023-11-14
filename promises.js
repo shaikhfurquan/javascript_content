@@ -1,10 +1,11 @@
 
 /*
 What is Promise :- 
-A promise is an object that return a value which you hope to receive in future but not now.
+    A promise is an object that return a value which you hope to receive in future but not now.
+    A promise in JavaScript is an object that represents the eventual completion of an asynchronous operation and its resulting value. It is used to handle asynchronous operations in a more predictable way.
 
 Why promise:-
-Promise are used to handle asynchronous operations. They provide an alernative approach for callback by reducing the callback hell and writing th code cleaner.
+    Promise are used to handle asynchronous operations. They provide an alernative approach for callback by reducing the callback hell and writing th code cleaner.
 */
 let p = new Promise((resolve, reject) => {
     let graduate = false;
