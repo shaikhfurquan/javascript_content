@@ -7,3 +7,18 @@ const removeDuplicates = (arr) => {
 
   let num = new Set([10,20,10])
   console.log(num);
+
+
+
+  //Or
+  const removeDuplicate = (arr) => {
+    let newUniqueArray = []
+    for (num of arr) {
+        if (!newUniqueArray.includes(num)) {
+            newUniqueArray.push(num)
+        }
+    }
+    return newUniqueArray
+}
+
+console.log(removeDuplicate([1, 1, 2, 3, 4, 5, 3, 6, 7, 8, 6, 7, 8]));
