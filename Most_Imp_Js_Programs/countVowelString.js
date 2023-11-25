@@ -10,4 +10,5 @@ const countVowels = (str) => {
     return count;
 };
 
-console.log(countVowels('hello world'));
+console.log(countVowels('hello world'));        //3
+console.log(countVowels('products'));           //2
