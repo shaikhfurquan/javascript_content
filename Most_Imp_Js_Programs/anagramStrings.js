@@ -4,4 +4,5 @@ const isAnagram = (str1, str2) => {
     return sortedStr1 === sortedStr2;
   };
   console.log(isAnagram("Anas", "sana"));
+  console.log(isAnagram("mom", "mom"));
   
