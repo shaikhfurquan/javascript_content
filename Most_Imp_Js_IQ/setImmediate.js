@@ -1,3 +1,8 @@
+
+//- Not immmediate as its name
+//- Its callback is place in the "check queue"
+
+
 let a = 1;
 let b = 3;
 
@@ -10,3 +15,6 @@ setImmediate(()=>{
 }) //callback register
 
 console.log('Inside the enevt loop');
+
+//Inside the enevt loop
+//4
