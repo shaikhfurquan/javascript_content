@@ -10,7 +10,7 @@ setImmediate(()=>{
 //callback register with check queue for the next cycle
 
 setTimeout(()=>{
-    add("SetImmediate" , 3,4)
+    add("SetTimeout" , 3,4)
 }, 0)
 //callback register with check queue for the next cycle
 
