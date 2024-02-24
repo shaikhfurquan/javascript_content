@@ -9,4 +9,3 @@ const capitalizeSentence = (sentence) => {
   };
   
   console.log(capitalizeSentence("my name is furquan Shaikh"));
-  console.log(capitalizeSentence("hello, World!"));
