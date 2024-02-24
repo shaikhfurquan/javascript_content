@@ -14,7 +14,7 @@ for(i=0; i<=10;i++){
 
 
 for(i=10; i<=20;i++){
-    console.log('Hello World');
+    // console.log('Hello World');
 }
 
 
