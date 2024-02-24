@@ -21,5 +21,4 @@ const removeDuplicates = (arr) => {
     return newUniqueArray
 }
 
-console.log(removeDuplicate([1, 1, 2, 3, 4, 5, 5, 8, 3, 6, 7, 8, 6, 7, 8]));
-console.log(removeDuplicate([1, 1, 2, 3, 4, 11,55,7,2,1, 8]));
+console.log(removeDuplicate([1, 1, 2]));
