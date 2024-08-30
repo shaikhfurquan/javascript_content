@@ -26,3 +26,16 @@ console.log(arr2)
 //[ 10, 20, 30 ]
 // [ 10, 20, 30, 40, 50, 60 ]
 
+
+
+
+const obj1 = {
+    name : "Khan"
+}
+const obj2 = {
+    age : 24
+}
+
+const res = {...obj1 , ...obj2}
+console.log(res);
+// { name: 'Khan', age: 24 }
