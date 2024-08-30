@@ -75,3 +75,24 @@ function mulTable(num){
 }
 
 mulTable(20)
+
+
+
+function sayHello() {
+    console.log("Hello!");
+    return true; // Returning true to stop further execution if this is called
+}
+
+function sayGoodbye() {
+    console.log("Goodbye!");
+    return true; // Returning true to stop further execution if this is called
+}
+
+// Calling functions using the || (OR) operator
+sayHello() || sayGoodbye();
+
+
+/*
+Hello!
+When using the || operator, JavaScript evaluates from left to right and stops at the first true value it finds.
+*/
