@@ -1,3 +1,5 @@
+
+// Ex-1
 function add(a,b){
     console.log(a+b);
 }
@@ -29,53 +31,54 @@ Set immediate
 
 
 
-
-
-console.log('Start'); // Output: Start
-
-setTimeout(() => {
-    console.log('Timeout 1'); // Output: Timeout 1
-}, 0);
+// Ex-2
+console.log('Start');
 
 setTimeout(() => {
-    console.log('Timeout 2'); // Output: Timeout 2
+    console.log('Timeout 1'); // (4)
 }, 0);
 
 setInterval(() => {
-    console.log('Interval'); // This will keep running after every 1000ms
-}, 1000);
+    console.log('Interval'); // (5)
+}, 0);
 
 setImmediate(() => {
-    console.log('Immediate'); // Output: Immediate
+    console.log('Immediate'); // (6)
 });
 
 process.nextTick(() => {
-    console.log('Next Tick'); // Output: Next Tick
+    console.log('Next Tick'); // (2)
 });
 
-console.log('End'); // Output: End
+Promise.resolve().then(() => {
+    console.log('Promise 1'); // (3)
+});
+
+console.log('End');
+
 
 /*
 
-Explanation of Execution Order:
-console.log('Start') - Executes first, outputting "Start".
+Start/End: Synchronous code runs first.
 
-process.nextTick() - Executes after the current operation completes but before any I/O tasks or timers. It outputs "Next Tick".
+Next Tick: Executes immediately after the current operation.
 
-setImmediate() - Executes after the current event loop cycle and after I/O tasks. It outputs "Immediate".
+Promise 1: Microtask, runs after the next tick.
 
-setTimeout() - Even with a delay of 0, it executes after the I/O tasks and setImmediate. The first timeout outputs "Timeout 1".
+Timeout 1: Macrotask, executes after microtasks.
 
-Another setTimeout() - Executes next, outputting "Timeout 2".
+Interval: Executes after timeout (if it runs).
 
-console.log('End') - Executes last, outputting "End".
+Immediate: Executes last in the next event loop iteration.
 
+Microtasks (Promise, nextTick) have higher priority than macrotasks (setTimeout, setImmediate, setInterval).
 
 Start
-Next Tick
-Immediate
-Timeout 1
-Timeout 2
 End
-*/
+Next Tick
+Promise 1
+Timeout 1
+Interval
+Immediate
 
+*/
