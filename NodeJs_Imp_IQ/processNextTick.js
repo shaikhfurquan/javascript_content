@@ -59,10 +59,15 @@ console.log('End'); // Output: End
 
 Explanation of Execution Order:
 console.log('Start') - Executes first, outputting "Start".
+
 process.nextTick() - Executes after the current operation completes but before any I/O tasks or timers. It outputs "Next Tick".
+
 setImmediate() - Executes after the current event loop cycle and after I/O tasks. It outputs "Immediate".
+
 setTimeout() - Even with a delay of 0, it executes after the I/O tasks and setImmediate. The first timeout outputs "Timeout 1".
+
 Another setTimeout() - Executes next, outputting "Timeout 2".
+
 console.log('End') - Executes last, outputting "End".
 
 
